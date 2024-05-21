@@ -1,0 +1,7 @@
+{
+  "name": "identicare",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
