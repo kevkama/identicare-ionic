@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePage } from './home.page';
+import { SplashScreenComponent } from './splash-screen.component';
+
 
 const routes: Routes = [
   {
     path:'',
-    component: HomePage,
+    component: SplashScreenComponent,
   }
 ];
 
+
+
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports:[RouterModule]
 })
-export class HomePageRoutingModule {}
+export class SplashRoutingModule { }
