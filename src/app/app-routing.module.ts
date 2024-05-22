@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./libs/splash-screen/splash-screen.module').then( m => m.SplashScreenModule)
   },
   {
+    path: 'info',
+    loadChildren: () => import('./libs/info/info.module').then( m => m.InfoModule)
+  },
+  {
     path: '',
     redirectTo: 'splash',
     pathMatch: 'full'
