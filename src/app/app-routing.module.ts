@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
+const routes: Routes = [ 
+  {
+    path: '',
+    redirectTo: 'splash',
+    pathMatch: 'full'
+  },
   {
     path: 'splash',
     loadChildren: () => import('./libs/splash-screen/splash-screen.module').then( m => m.SplashScreenModule)
@@ -11,10 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./libs/info/info.module').then( m => m.InfoModule)
   },
   {
-    path: '',
-    redirectTo: 'splash',
-    pathMatch: 'full'
+    path: 'auth',
+    loadChildren: () => import('./libs/authentification/authentification.module').then( m => m.AuthentificationModule)
   },
+ 
 ];
 
 @NgModule({
