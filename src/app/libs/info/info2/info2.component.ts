@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info2',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Info2Component  implements OnInit {
 
-  constructor() { }
+  constructor(private _router:Router) { }
 
   ngOnInit() {}
+
+  goNext() {    
+    this._router.navigate(['info/info3']);   
+  }
 
 }
