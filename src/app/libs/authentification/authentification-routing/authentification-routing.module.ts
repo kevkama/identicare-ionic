@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { RegisterComponent } from '../register/register.component';
+import { IonicModule } from '@ionic/angular';
 
 const routes: Routes =[
   {
@@ -16,7 +17,8 @@ const routes: Routes =[
 ]
 
 @NgModule({
-  imports: [CommonModule,RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  imports: [CommonModule, IonicModule, RouterModule.forChild(routes)],
+  exports: [RouterModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AuthentificationRoutingModule { }

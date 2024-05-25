@@ -1,3 +1,30 @@
-<p>
-  login works!
-</p>
+<ion-content class="login">
+
+  <div class="header">
+    <h1>Login to Identicare</h1>
+  </div>
+
+  <div class="buttons">
+    <ion-button expand="block" class="social-button" fill="clear">
+      <span>Use e-mail</span>
+    </ion-button>
+    <ion-button expand="block" class="social-button" fill="clear">
+      <span>Continue with Facebook</span>
+    </ion-button>
+    <ion-button expand="block" class="social-button" fill="clear">
+      <span>Continue with Apple</span>
+    </ion-button>
+    <ion-button expand="block" class="social-button" fill="clear">
+      <span>Continue with Google</span>
+    </ion-button>
+  </div>
+
+  <div class="terms">
+    <p>By clicking continue, you agree to our <b>Terms of Service</b> and <b>Privacy Policy</b></p>
+  </div>
+
+  <div class="signup">
+    <p>Don’t have an Account? <b (click)="goReg()">Sign Up</b></p>
+  </div>
+
+</ion-content>
