@@ -16,4 +16,8 @@ export class LoginComponent  implements OnInit {
     this._router.navigate(['auth/register']);
   }
 
+  goEmail() {
+    this._router.navigate(['auth/email']);
+  }
+
 }

@@ -4,11 +4,12 @@ import { AuthentificationRoutingModule } from './authentification-routing/authen
 import { IonicModule } from '@ionic/angular';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { EmailComponent } from './email/email.component';
 
 
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent],
+  declarations: [LoginComponent, RegisterComponent, EmailComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
