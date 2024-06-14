@@ -35,14 +35,17 @@ content {
   }
 
   .post-input-container {
+    width: 100%;
+    position: relative;
     display: flex;
     align-items: flex-start;
     padding: 16px;
-    background: transparent;
-    border-radius: 8px;
+    background: transparent;    
     margin-bottom: 16px;
-    border: #000;
-    border-width: 2px;
+    border: 2px solid; 
+    border-image: linear-gradient(to right, #22E01E, #39E3FA) 1;
+    border-radius: 8px;
+    
 
     .small-avatar {
       width: 40px;
