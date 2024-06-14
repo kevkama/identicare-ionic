@@ -1,64 +1,61 @@
-<div class="home-post">
-  <div class="header">
-    <div class="posts">Posts</div>
-  </div>
-  <div class="input-field">
-    <div class="profile-avatar">
-      <div class="graphic"></div>
+<content>
+  <h1>Identicare</h1>
+  <!-- User Avatar and Name -->
+  <div class="user-info">
+    <img src="path/to/avatar.jpg" alt="User Avatar" class="avatar">
+    <div class="user-details">
+      <h2>User Name</h2>
     </div>
-    <div class="input-content">
-      <div class="label">What's on your mind?</div>
-      <div class="input-icons">
-        <div class="icon image"></div>
-        <div class="icon laugh"></div>
-        <div class="icon document"></div>
-        <div class="icon location"></div>
+  </div>
+
+  <!-- Post Input Container -->
+  <div class="post-input-container">
+    <img src="path/to/avatar.jpg" alt="User Avatar" class="small-avatar">
+    <div class="input-section">
+      <textarea placeholder="Do you have any insights?"></textarea>
+      <div class="actions">
+        <ion-icon name="image-outline"></ion-icon>
+        <ion-icon name="happy-outline"></ion-icon>
+        <ion-icon name="attach-outline"></ion-icon>
+        <ion-icon name="location-outline"></ion-icon>
       </div>
     </div>
   </div>
-  <div class="social-media-post">
-    <div class="post-avatar">
-      <div class="avatar"></div>
-    </div>
-    <div class="post-content">
+
+  <!-- Posts -->
+  <div class="posts">
+    <div class="post">
       <div class="post-header">
-        <div class="meta-data">
-          <div class="name-group">
-            <div class="name">Helena</div>
-            <div class="time">3 min ago</div>
-          </div>
+        <img src="path/to/avatar.jpg" alt="User Avatar" class="post-avatar">
+        <div class="post-user-details">
+          <h4>User Name</h4>
+          <p>Location - 2 hours ago</p>
         </div>
-        <div class="icon-more">
-          <div class="union"></div>
-          <div class="ellipse"></div>
-          <div class="ellipse"></div>
-          <div class="ellipse"></div>
-        </div>
-      </div>
-      <div class="image-content"></div>
-      <div class="comment-section">
-        <div class="post-text">
-          i had hip replacement surgery last week. I’m so happy with the results. Dr. Alex was very professional and the hospital staff was great.
-        </div>
-        <div class="post-actions">
-          <div class="likes">
-            <div class="icon-heart"></div>
-            <div class="like-count">21 likes</div>
-          </div>
-          <div class="comments">
-            <div class="icon-comment"></div>
-            <div class="comment-count">4 comments</div>
-          </div>
+        <ion-icon name="ellipsis-horizontal-outline" class="menu-icon"></ion-icon>
+        <div class="menu">
+          <p>Save Post</p>
+          <p>Report Post</p>
+          <p>Follow/Unfollow User</p>
+          <p>Hide Content</p>
+          <p>About User</p>
+          <p>Add to Favorites</p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="comments-section">
-    <div class="comment">
-      <div class="avatar"></div>
-      <div class="comment-text">
-        Glad to hear it. I am coming to see you soon. Have a good recovery.
+      <div class="post-content">
+        <p>This is a sample post content. Lorem ipsum dolor sit amet.</p>
+        <img src="path/to/post-image.jpg" alt="Post Image" class="post-image">
+      </div>
+      <div class="post-reactions">
+        <div class="reaction">
+          <ion-icon name="heart-outline"></ion-icon> <span>24</span>
+        </div>
+        <div class="reaction">
+          <ion-icon name="chatbubble-outline"></ion-icon> <span>5</span>
+        </div>
+        <div class="reaction">
+          <ion-icon name="repeat-outline"></ion-icon> <span>3</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</content>
