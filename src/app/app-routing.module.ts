@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./libs/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'dms',
+    loadChildren: () => import('./libs/dms/dms.module').then( m => m.DmsModule)
+  },
  
 ];
 
